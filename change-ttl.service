@@ -1,0 +1,8 @@
+[Unit]
+Description=example systemd service unit file.
+
+[Service]
+ExecStart=sysctl -w net.ipv4.ip_default_ttl=65
+
+[Install]
+WantedBy=multi-user.target
